@@ -33,3 +33,25 @@ It includes:
 ---
 
 ## 📂 Folder Structure
+
+---
+
+## 🔧 Requirements
+- AlphaFold2 (local or ColabFold)
+- Python 3.9+
+- Biopython, PyMOL (or Py3Dmol)
+- TM-align or Foldseek
+- InterProScan (optional)
+- Matplotlib, Pandas
+
+---
+
+## 🧪 Demo
+Coming soon. Stay tuned for detailed use-cases on enzymes like **TPH1**, **PAH**, **LOX**, and **GAD**.
+
+---
+
+## ✍️ Author
+**Shravya R S**  
+Bioinformatics researcher passionate about structural biology, protein mutation resilience, and computational enzymology.
+
