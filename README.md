@@ -2,7 +2,6 @@
 
 This project offers a simple yet powerful pipeline to **download**, **parse**, and **analyze protein structures** using their PDB IDs. Built with **Biopython**, it enables inspection of chain organization and amino acid composition from real 3D protein data fetched from RCSB PDB.
 
----
 
 ## 🔧 Features
 
@@ -12,7 +11,6 @@ This project offers a simple yet powerful pipeline to **download**, **parse**, a
 - 📊 Computes amino acid composition (e.g., GLY, ALA, LEU counts)
 - 🖥️ Works in both command-line and interactive mode
 
----
 
 ## 🧠 Use Cases
 
@@ -23,7 +21,6 @@ This tool is ideal for:
 - 📚 Teaching bioinformatics or structural biology  
 - ✅ Validating the integrity of PDB files
 
----
 
 ## 💻 How to Run
 
