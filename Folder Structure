@@ -1,0 +1,17 @@
+Protein-structure-prediction-/
+│
+├── README.md                  ← We’ll write this in Step 2
+├── data/
+│   ├── input_sequences/
+│   └── af2_outputs/
+├── scripts/
+│   ├── run_af2.sh
+│   ├── mutation_modeler.py
+│   └── structure_comparator.py
+├── notebooks/
+│   ├── af2_analysis.ipynb
+│   └── 3D_visualization.ipynb
+├── results/
+│   ├── plots/
+│   └── reports/
+└── LICENSE
