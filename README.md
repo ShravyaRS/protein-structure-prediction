@@ -71,3 +71,5 @@ Add point mutation analysis
 Annotate domains or ligand-binding sites
 Visualize structure using NGLView, PyMOL, or 3Dmol.js
 
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
