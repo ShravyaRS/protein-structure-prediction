@@ -1,49 +1,73 @@
-# 🧬 Protein Structure Prediction and Analysis
+# 🧬 Protein Structure Prediction and Composition Analysis
 
-This project demonstrates how to **fetch, parse, and analyze protein structures** using their PDB IDs. It utilizes **Biopython** to access structural data from the RCSB Protein Data Bank and extract biologically relevant insights.
+This project offers a simple yet powerful pipeline to **download**, **parse**, and **analyze protein structures** using their PDB IDs. Built with **Biopython**, it enables inspection of chain organization and amino acid composition from real 3D protein data fetched from RCSB PDB.
 
 ---
 
 ## 🔧 Features
 
-- 📥 Automated download of `.pdb` files from RCSB
-- 📖 Parsing protein structure using Biopython
-- 🔍 Extraction of chain and residue-level information
-- 📊 Clean and interpretable summary output for quick insights
+- 📥 Downloads `.pdb` files directly from RCSB PDB
+- 📖 Parses protein structures using Biopython
+- 🔬 Identifies chains and residues in the model
+- 📊 Computes amino acid composition (e.g., GLY, ALA, LEU counts)
+- 🖥️ Works in both command-line and interactive mode
 
 ---
 
 ## 🧠 Use Cases
 
-This tool is suitable for:
+This tool is ideal for:
 
-- 🧪 Exploring the structural composition of proteins  
-- 🎯 Preparing PDB input files for modeling/docking  
-- ✅ Validating PDB IDs prior to simulation or visualization  
-- 📚 Teaching bioinformatics or structural biology basics
+- 🧪 Learning protein structure basics  
+- 🔍 Preprocessing PDB files before docking or simulation  
+- 📚 Teaching bioinformatics or structural biology  
+- ✅ Validating the integrity of PDB files
 
 ---
 
-## 💻 How to Use
+## 💻 How to Run
+
+### 🔹 Option 1: Use the built-in interactive mode
 
 ```bash
 $ python protein_parser.py
 Enter Protein PDB ID (e.g., 1HHO): 8WIX
+
+🔹 Option 2: Command-line mode
+$ python protein_parser.py 8WIX
+
+Project Structure
+Protein-structure-prediction-/
+│
+├── sample_data/
+│   └── 8WIX.pdb              # Sample structure for testing
+│
+├── protein_parser.py         # Main Python script
+└── README.md                 # Project documentation
+Sample Output
 ✅ Downloaded 8WIX.pdb successfully!
-✅ Parsed structure: 8WIX
-🔹 Number of Chains: 2
-🔹 Number of Residues: 284
+
+🔬 Structure Summary for 8WIX
+🔹 Chains Found: 2
+🔹 Total Residues: 284
+🔹 Amino Acid Composition:
+   - GLY: 35
+   - ALA: 20
+   - LEU: 40
+   - SER: 18
+   ...
 
 Requirements
-Python 3.7 or higher
+Python 3.7+
 Biopython
 requests
 
-Install dependencies:
+Install dependencies with:
 pip install biopython requests
-Future Improvements
-Integration with AlphaFold or Swiss-Model for predicted structures
-Mutation simulation and impact analysis on key residues
-Functional site detection and ligand-binding annotation
-3D visualization support using PyMOL or NGLView
+
+Future Work
+Integrate AlphaFold or Swiss-Model support
+Add point mutation analysis
+Annotate domains or ligand-binding sites
+Visualize structure using NGLView, PyMOL, or 3Dmol.js
 
