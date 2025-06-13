@@ -1,57 +1,49 @@
-# 🧬 Protein Structure Prediction and Mutation Impact Analysis
+# 🧬 Protein Structure Prediction and Analysis
 
-## 🔍 Overview
-This project provides an integrated pipeline for predicting 3D structures of proteins using **AlphaFold2** and analyzing the impact of **mutations** on structure, function, and druggability.  
-
-It includes:
-- Structure prediction using AlphaFold2
-- Comparison with known PDB structures
-- Interactive 3D visualization
-- Functional hotspot annotation
-- Mutation modeling and RMSD scoring
+This project demonstrates how to **fetch, parse, and analyze protein structures** using their PDB IDs. It utilizes **Biopython** to access structural data from the RCSB Protein Data Bank and extract biologically relevant insights.
 
 ---
 
-## 🚀 Objectives
-- Build reproducible pipelines for structure prediction
-- Highlight mutation-induced structural disruptions
-- Map functional regions (active sites, PTMs, etc.)
-- Quantify changes via RMSD, TM-score, and energy shifts
+## 🔧 Features
+
+- 📥 Automated download of `.pdb` files from RCSB
+- 📖 Parsing protein structure using Biopython
+- 🔍 Extraction of chain and residue-level information
+- 📊 Clean and interpretable summary output for quick insights
 
 ---
 
-## 🧪 Features
-| Feature | Description |
-|--------|-------------|
-| 🧠 Mutation Simulator | Input a mutation → visualize 3D structure changes |
-| 🔬 Compare AF2 vs PDB | Overlay AlphaFold2 predictions with known PDB |
-| 🧬 Functional Annotations | Active sites, ligand-binding regions via UniProt & InterPro |
-| 🌐 Interactive 3D Viewer | Visualize predictions in 3D with `3Dmol.js` |
-| 📈 RMSD & Similarity Metrics | TM-align, PyMOL, Biopython tools |
-| 📄 Auto Report Generator | Generates summary report of findings as PDF |
+## 🧠 Use Cases
+
+This tool is suitable for:
+
+- 🧪 Exploring the structural composition of proteins  
+- 🎯 Preparing PDB input files for modeling/docking  
+- ✅ Validating PDB IDs prior to simulation or visualization  
+- 📚 Teaching bioinformatics or structural biology basics
 
 ---
 
-## 📂 Folder Structure
+## 💻 How to Use
 
----
+```bash
+$ python protein_parser.py
+Enter Protein PDB ID (e.g., 1HHO): 8WIX
+✅ Downloaded 8WIX.pdb successfully!
+✅ Parsed structure: 8WIX
+🔹 Number of Chains: 2
+🔹 Number of Residues: 284
 
-## 🔧 Requirements
-- AlphaFold2 (local or ColabFold)
-- Python 3.9+
-- Biopython, PyMOL (or Py3Dmol)
-- TM-align or Foldseek
-- InterProScan (optional)
-- Matplotlib, Pandas
+Requirements
+Python 3.7 or higher
+Biopython
+requests
 
----
-
-## 🧪 Demo
-Coming soon. Stay tuned for detailed use-cases on enzymes like **TPH1**, **PAH**, **LOX**, and **GAD**.
-
----
-
-## ✍️ Author
-**Shravya R S**  
-Bioinformatics researcher passionate about structural biology, protein mutation resilience, and computational enzymology.
+Install dependencies:
+pip install biopython requests
+Future Improvements
+Integration with AlphaFold or Swiss-Model for predicted structures
+Mutation simulation and impact analysis on key residues
+Functional site detection and ligand-binding annotation
+3D visualization support using PyMOL or NGLView
 
